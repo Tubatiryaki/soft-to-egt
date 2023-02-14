@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Example</title>
+</head>
+<body>
+    <div style="width: 100px; background-color: chocolate; float:left;"> <!--Bütün divlere float özelliğini verirsek aynı satıra gelirler-->
+        Erhan KAya
+    </div>
+    <div style="width: 100px; background-color: aqua; float: left;">
+        Html dersi
+    </div>
+    <!--Table kullanımı-->
+    <table border="1">
+        <tr><!--Table row-->
+            <td><!--Tablo hücre yapısı-->
+Mehmet
+            </td>
+            <td>Şimbil</td>
+            <td>Öğrenci</td>
+        </tr>
+        <tr>
+            <td>Talip</td>
+            <td>Yeşildal</td>
+            <td>Öğrenci</td>
+        </tr>
+        <tr>
+            <td>Erhan</td>
+            <td>Kaya</td>
+            <td>Öğretmen</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th><!--Tablo sütun head (başlığı)-->
+Ad
+            </th>
+            <th>
+                Soyad
+            </th>
+            <th>Meslek</th>
+            <tr>
+                <td>Erhan</td>
+                <td>Kaya</td>
+                <td>Öğretmen</td>
+            </tr>
+            <tr><!--Table row-->
+                <td><!--Tablo hücre yapısı-->
+    Mehmet
+                </td>
+                <td>Şimbil</td>
+                <td>Öğrenci</td>
+            </tr>
+            <tr>
+                <td>Talip</td>
+                <td>Yeşildal</td>
+                <td>Öğrenci</td>
+            </tr>
+          
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <!--table>tr*4>th+td*3 aşağıda bulunan kodun formulu-->
+        <!-- table>(tr>th*4)+tr*3>th+td*3 -->
+        <tr>
+            <th>No</th>
+            <td>Ad</td>
+            <td>Soyad</td>
+            <td>Meslek</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>Erhan</td>
+            <td>Kaya</td>
+            <td>Öğretmen</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Tuba</td>
+            <td>Demir</td>
+            <td>Öğrenci</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Gökalp</td>
+            <td>Gök</td>
+            <td>Öğrenci</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <thead><!--Thead seo için önemli-->
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Erhan</td>
+                <td>Kaya</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Erhan</td>
+                <td>Kaya</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Erhan</td>
+                <td>Kaya</td>
+                <td>33</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">İsim Listesi</th>
+            </tr>
+            <tr>
+                <th colspan="2">Ad Soyad</th>
+                <th>yaş</th>
+                <th>cinsiyet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td>Erhan</td>
+                <td>Kaya</td>
+                <td>33</td>
+                <td rowspan="2">Erkek</td>
+            </tr>
+            <tr>
+                <td>Fırat</td>
+                <td>Taş</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Selin</td>
+                <td>Öz</td>
+                <td>20</td>
+                <td rowspan="2">Kadın</td>
+            </tr>
+            <tr>
+                <td>Pelin</td>
+                <td>Özertan</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <td colspan="4">İsim Listesi</td>
+            
+        </tr>
+        <tr >
+            <td>acb</td>
+            <td colspan="2">ekjdfjkhljkh</td>
+            <td>jk</td>
+        </tr>
+        <tr >
+            <td rowspan="3">ljkdhfl</td>
+        <td colspan="2"></td>
+            
+            <td>jkgjk</td>
+        </tr>
+        
+       
+        <tr >
+            <td>acb</td>
+            <td>ekjdf</td>
+            <td>ekjdf</td>
+        </tr>
+        <tr >
+            <td>acb</td>
+            <td>ekjdf</td>
+            <td>ekjdf</td>
+        </tr>
+        <tr >
+            <td>acb</td>
+            <td colspan="2">ekjdf</td>
+            <td>jhg</td>
+        </tr>
+    </table>
+    <!--Form elemanları-->
+    <form method="post"> <!--Girdi olarak aldığımız herşeyi form elemanı olarak kullanabiliriz-->
+        <!--Method Post - inputlardan alınan veriler bir paket halinde sunucuya gönderilir-->
+
+    </form>
+    <form method="get">
+        <!-- Method get inputtan alınan değerler url kısmına gönderilir ve buradan ayrıştılarak kullanılır-->
+
+    </form>
+    <form action="login.html">
+          <!-- Action hangi sayfada yada sitede işlenecekse oranın url adresi yazılır-->
+    </form>
+    <form enctype="multipart/form-data">
+        <!--Dosya veya media resim müzik video vb. araçların sunucuya gönderilmesinde kullanılır-->
+    </form>
+    <form enctype="application/x-www-form-urlencoded">
+        <!--Bunu kullandığımızda sitemiz saldırıya maruz kalabilir
+        .exe veya setup gibi uygulamaların gönderimi için kullanılır. Gömülü sistemler-->
+    </form>
+    <hr>
+
+    <form><!--<form action="index.html" method= "post" enctype = "text/plain>" Default değer olarak yerleşir-->
+        <!--İnput kullanımı (içerik alıcı yapılar)-->
+        <label for="kadın">Kadın</label>
+        <input type="radio" name="cinsiyet" id="kadın" value="kadın">
+        <label for="erkek">Erkek </label>
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+        <hr>
+        <label for="kitap">Kitap</label>
+        <input type="checkbox" id="kitap" value="kitap">
+        <label for="uyku">Uyku</label>
+        <input type="checkbox" id="uyku" value="uyku">
+        <label for="yürüyüs">Yürüyüş</label>
+        <input type="checkbox" id="yürüyüs" value="yürüyüs">
+        <hr>
+        <input type="reset">
+        <hr>
+        <input type="hidden" value="Erhan Kaya">
+        <hr>
+        <input type="email" >
+        <hr>
+        <input type="submit">
+        <hr>
+        <input type="number" min="0" max="10" value="5" step="0.5"><!--sayı dışında sadece e harfini alır üstlü sayılar için sayılar sığmadığında-->
+        <hr>
+        <input type="file" >
+        <hr>
+        <input type="date" value="2023-02-14"><!--tarihi yıl, ay gün olarak tazmalıyız-->
+        <hr>
+        <input type="time">
+        <hr>
+        <input type="datetime-local">
+        <hr>
+        <input type="color">
+        <hr>
+        <input type="range" min="5" max="1000" step="0.5">
+        <hr>
+        <input type="tel">
+        <hr>
+        <input type="url">
+        <hr>
+        <input type="search" name="search">
+        <hr>
+        <input type="image" src="tablo.png"><!--resim bilgilerini url ye gönderir-->
+        <hr>
+        <input type="text" placeholder="Name" disabled><!--disabled kullandığımızda inputa veri giremeyiz kullanamayız-->
+        <hr>
+        <label for="name">Name<span style="color:red">*</span></label>
+        <input type="text" placeholder="Name *" required><!--required girilmesi zorunlu alan-->
+        <hr>
+        <!--Form Example-->
+        <!--Giriş formu-->
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2"> Giriş Formu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><label for="Username">Username</label></td>
+                    <td><input type="text" name="Username" id="Username" placeholder="Enter Username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="text" name="Password" id="Password" placeholder="Enter Password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Giriş yap" style="width:100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Giriş yap" style="width:100%">
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </form>
+        <hr>
+        <textarea name="" id="" cols="30" rows="10" ></textarea>
+        <hr>
+        <select name="fomt" id="font" >
+            <option value="1">Arial</option>
+            <option value="2">Commic sans</option>
+            <option value="3" selected>Times new roman</option>
+        </select>
+        <hr>
+        <select name="araclar" id="araclar" >
+            <optiongroup>
+                <option>Fontlar</option>
+                <option value="1">Arial</option>
+                <option value="2">Commic sans</option>
+                <option value="3" selected>Times new roman</option>
+
+            </optiongroup>
+            <option>Arabalar</option>
+            <optiongroup>
+                <option value="1">Sedan</option>
+                <option value="2">Tofaş</option>
+                <option value="3" selected>Yarış arabası</option>
+
+            </optiongroup>
+
+            
+        </select>
+        <hr>
+        <button type="button">Script button</button>
+        <button type="submit">submit button</button>
+        <button type="reset">reset button</button>
+        <button type="menu">menu button</button>
+        
+
+
+        <!-- 
+            ----Summernote yapıları araştır
+           -------- input çeşitleri-----------
+
+            type="text" default değeri
+            type="password, 
+            radio (kullanırkan gruplamamız gerekiyor isim vererek), 
+            checkbox, submit(formu bitirip verileri aktarmak için kullandığımız yapı),
+            reset(form tagları içerisinde bulunan bütün inputları temizler),
+            hidden(gizli input yapısı),
+            email,number, file, date, time, datetime( local tarih ve saat),
+            month, week, color, 
+            range(belliaralıklarda kullandığımız kaydırmalı yapı),
+            search,tel, url, image "
+        -->
+
+    </form>
+    <br>
+
+      
+
+  
+</body>
+</html>
